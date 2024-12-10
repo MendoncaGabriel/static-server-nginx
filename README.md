@@ -24,3 +24,9 @@ Previne abusos ao limitar o número de conexões simultâneas por IP.
 **Buffers e Tamanhos de Arquivo:**
 Suporte a vídeos grandes com client_max_body_size 10G.
 Desativa o buffer de proxy (proxy_buffering off).
+
+# Construindo a imagem do Docker (na pasta api)
+docker build -t node-application .
+
+# Executando o contêiner Docker
+docker run -it -p 9000:3000 node-application
